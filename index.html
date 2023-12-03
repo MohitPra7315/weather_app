@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="import" href="https://fontawesome.com/icons/font-case?s=solid&f=classic.html">
+</head>
+
+<body>
+    <!-- wrapper -->
+    <div id="wrapper">
+
+        <!-- container -->
+        <div class="container">
+            <h2 class="app-heading">WEATHER APP</h2>
+            <!-- links -->
+            <div id="getWeather">
+                <p id="Your-Weather">Your Weather</p>
+                <p id="Search-Weather">Search Weather</p>
+
+            </div>
+            <div class="Weather">
+
+                <!-- grant -->
+                <div class="grant-locatin  sub-container">
+                    <img src="./location.png" width="80" height="80" loading="lazy" id="grantimg">
+                    <p id="p1">grant Location Acces</p>
+                    <p id="p2"> ALoow Acees to get </p>
+                    <button grant-Access>Grant Access</button>
+                </div>
+
+                <!-- search form -->
+                <form action="" searchInput id="search">
+
+                    <input placeholder="search from city" data-searchInput id="input">
+                    <button class="btn">
+                        Search<i class="fa-solid fa-font-case"></i>
+                    </button>
+                </form>
+
+
+
+
+                <!-- loading  screen container-->
+                <div class="loading-container sub">
+                    <img src="./loading.gif" width="80" height="80">
+                    <p>loading </p>
+                </div>
+
+
+                <!-- Show user info -->
+                <div id="userinfo" class="sub-container" userinfo>
+                    <!-- city name and flag -->
+                    <div id="cityflag">
+                        <p cityName></p>
+                        <img data-countryflag>
+                    </div>
+                    <!-- how is weather -->
+                    <div data-weathery class="data-weathery"></div>
+                    <!-- Mosam symbols or image -->
+                    <img id="mosamimg" data-weatherIcon>
+                    <!-- Temperature -->
+                    <p data-temperature></p>
+                    <!-- Other weather DATA -->
+                    <div class="otherData">
+                        <!-- box for windSpeed -->
+                        <div id="ws">
+                            <img src="" alt="wind">
+                            <h2>windSpeed</h2>
+                            <p windspeedDisplay></p>
+                        </div>
+                        <div humidity>
+                            <img src="./humidity.png" alt="humidity">
+                            <h2>HUMIDITY</h2>
+                            <p HUMIDITYdISPLAY></p>
+                        </div>
+                        <div ws>
+                            <img src="./cloud.png" alt="CLOUD">
+                            <h2>CLOUDS</h2>
+                            <p cloudsDisplay></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js.js"></script>
+</body>
+
+</html>
